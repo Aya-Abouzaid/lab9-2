@@ -57,7 +57,7 @@ jobs:
         uses: azure/webapps-deploy@v3  # Use the latest version of azure/webapps-deploy
         id: deploy-to-azure-web-app
         with:
-          app-name: <YOUR_APP_NAME>  # Replace with your Azure app name
-          slot-name: 'Production'
+          app-name: lab9-2
+          slot-name: 'Staging'
           publish-profile: ${{ secrets.MY_SECRET }}  # Use correct secret name
           package: .
